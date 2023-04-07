@@ -1,0 +1,652 @@
+@import "https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap";
+html {
+  scroll-behavior: smooth;
+}
+
+.business .business_container .businessText button,
+.customers .customers_block button,
+.future .future_container .futureText button,
+.intro .intro_container .introText button,
+.reviews .reviews_container .textReviews button,
+.services .services_block button,
+form .form_container .frmBtn button,
+styleBtn {
+  width: 165px;
+  height: 50px;
+  background-color: #fe7062;
+  border: 0;
+  border-radius: 30px;
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-size: 1rem;
+}
+
+form .form_container .frmBtn button {
+  width: 125px;
+}
+
+.business .business_container .businessText button:hover,
+.customers .customers_block button:hover,
+.future .future_container .futureText button:hover,
+.intro .intro_container .introText button:hover,
+.reviews .reviews_container .textReviews button:hover,
+.services .services_block button:hover,
+form .form_container .frmBtn button:hover,
+styleBtn:hover {
+  background-color: #fe503f;
+  cursor: pointer;
+}
+
+styleIcon {
+  margin: 80px;
+}
+
+.support .support_container .icon_container .icon span,
+styleIcon {
+  width: 90px;
+  height: 90px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.calcBlock .calc_container .fnum,
+.calcBlock .calc_container .snum,
+.calcBlock .calc_container .tnum,
+num {
+  text-align: center;
+  margin: 100px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
+}
+
+.business,
+.business .business_container,
+.calcBlock,
+.calcBlock .calc_container,
+.customers,
+.customers .customers_block,
+.customers .customers_block .card_block,
+.customers .customers_block .card_block .card,
+.customers .customers_block .card_block .card span,
+.future,
+.future .future_container,
+.intro,
+.intro .intro_container,
+.ourClients,
+.ourClients .clients_container .clientsLogo,
+.reviews,
+.reviews .reviews_container,
+.services,
+.services .services_block,
+.services .services_block .card_block,
+.services .services_block .card_block .card,
+.services .services_block .card_block .card span,
+.support,
+.support .support_container,
+.support .support_container .icon_container,
+.support .support_container .icon_container .icon,
+.support .support_container .icon_container .icon span,
+flex,
+footer,
+footer .footer_container,
+form,
+form .form_container,
+form .form_container .frmBtn,
+header .header_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  margin: 0;
+}
+
+.intro,
+header {
+  width: 100%;
+  position: relative;
+}
+
+header {
+  height: 80px;
+  background-color: #fff;
+}
+
+header .header_container {
+  width: 100%;
+  background-color: #fff;
+  height: 100%;
+  z-index: 100;
+}
+
+header,
+header .header_container nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+header .header_container nav ul li {
+  list-style-type: none;
+}
+
+header .header_container nav ul li a {
+  font-size: 1.125rem;
+  letter-spacing: 1px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: lighter;
+  color: #111;
+  text-decoration: none;
+  margin: 45px;
+}
+
+footer .footer_container a:hover,
+header .header_container nav ul li a:hover {
+  color: #fe7062;
+}
+
+.intro {
+  height: 804px;
+}
+
+.intro .intro_bcg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("/img/home/backgroundHome.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.intro .intro_container {
+  z-index: 1000;
+  width: 1200px;
+  height: 100%;
+  flex-direction: row;
+}
+
+.intro .intro_container .introText {
+  text-align: left;
+  width: 50%;
+  height: 80%;
+  padding: 0 50px 0 0;
+}
+
+.intro .intro_container .introText h1 {
+  font-size: 4.5rem;
+  letter-spacing: 2px;
+}
+
+.intro .intro_container .introText p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 20px 0 40px;
+  color: #404040;
+  font-family: "Open Sans", sans-serif;
+}
+
+.intro .intro_container img {
+  width: 30rem;
+  height: 31rem;
+}
+
+.future,
+.services {
+  width: 100%;
+  text-align: center;
+}
+
+.services {
+  height: 754px;
+  background: linear-gradient(#fff, #ededfe);
+}
+
+.services .services_block {
+  width: 1200px;
+  flex-direction: column;
+}
+
+.future .future_container .futureText h1,
+.intro .intro_container .introText h1,
+.services .services_block h1 {
+  font-weight: 600;
+  line-height: 1.1;
+  font-family: "Ubuntu", sans-serif;
+  color: #111;
+}
+
+.services .services_block h1 {
+  margin: 20px auto 0;
+  font-size: 3rem;
+}
+
+.services .services_block .card_block {
+  flex-direction: row;
+  flex-shrink: 3;
+  width: 100%;
+}
+
+.services .services_block .card_block .card {
+  width: 37%;
+  height: 385px;
+  text-align: center;
+  flex-direction: column;
+  color: #000;
+  border-radius: 50px;
+  background-color: #fff;
+  margin: 50px 20px;
+  padding: 0 25px;
+}
+
+.services .services_block .card_block .card span {
+  position: relative;
+  background-color: #4c4ff9;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  padding: 10px;
+}
+
+.services .services_block .card_block .card span img {
+  position: absolute;
+  filter: invert(100%);
+  width: 70px;
+  height: 70px;
+}
+
+.customers .customers_block .card_block h5,
+.services .services_block .card_block h5 {
+  font-size: 1.3rem;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 1px;
+}
+
+.services .services_block .card_block p {
+  margin-top: 0;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+.future {
+  height: 764px;
+  background: url("/img/home/secondBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.future .future_container {
+  width: 1200px;
+  height: 100%;
+  flex-direction: row;
+}
+
+.business img,
+.future .future_container img {
+  width: 35rem;
+  height: 33rem;
+}
+
+.future .future_container .futureText {
+  margin-left: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+  width: 40%;
+  height: 80%;
+}
+
+.future .future_container .futureText h1 {
+  font-size: 3.4rem;
+  letter-spacing: 2px;
+}
+
+.future .future_container .futureText p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  margin: 20px 0 40px;
+  color: #404040;
+  font-family: "Open Sans", sans-serif;
+}
+
+.calcBlock {
+  width: 100%;
+  height: 300px;
+  background-color: #4c4ff9;
+}
+
+.calcBlock .calc_container {
+  color: #fff;
+}
+
+.calcBlock .calc_container .fnum h1,
+.calcBlock .calc_container .snum h1,
+.calcBlock .calc_container .tnum h1 {
+  font-size: 4rem;
+}
+
+.calcBlock .calc_container .fnum p,
+.calcBlock .calc_container .snum p,
+.calcBlock .calc_container .tnum p {
+  font-size: 1.7rem;
+}
+
+.business {
+  width: 100%;
+  height: 760px;
+  background: url("/img/home/thirtBackground.jpg");
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.business .business_container,
+.calcBlock .calc_container {
+  width: 1200px;
+  height: 100%;
+  flex-direction: row;
+}
+
+.business .business_container .businessText {
+  width: 50%;
+  margin: 80px;
+}
+
+.business .business_container .businessText h1 {
+  font-size: 3.1rem;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.business .business_container .businessText p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+}
+
+.business .business_container .businessText .columns {
+  padding: 0;
+  margin: 50px 0;
+  -moz-column-count: 2;
+  column-count: 2;
+  -moz-column-width: 50%;
+  column-width: 50%;
+}
+
+.business .business_container .businessText .columns li {
+  display: inline-block;
+  position: relative;
+  list-style-type: none;
+  margin-bottom: 10px;
+  margin-left: 1.1em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.business .business_container .businessText .columns li .dot {
+  margin-left: -15px;
+  position: absolute;
+  color: #4c4ff9;
+  font-size: 0.8rem;
+}
+
+.support,
+footer,
+form {
+  width: 100%;
+  height: 450px;
+  background-color: #fe7062;
+}
+
+.support .support_container {
+  width: 1200px;
+}
+
+.support .support_container .icon_container {
+  width: 100%;
+  height: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.support .support_container .icon_container .icon {
+  margin-top: 3%;
+  flex-direction: column;
+  text-align: center;
+}
+
+.support .support_container .icon_container .icon span {
+  margin: 0 250px;
+  flex-direction: column;
+}
+
+.support .support_container .icon_container .icon span img {
+  width: 55px;
+  height: 55px;
+}
+
+.support .support_container .icon_container .icon h5 {
+  margin-top: 15px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.ourClients {
+  width: 100%;
+  height: 300px;
+  text-align: center;
+  padding: 35px;
+}
+
+.ourClients .clients_container {
+  width: 1200px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.ourClients .clients_container h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.8rem;
+}
+
+.ourClients .clients_container .clientsLogo {
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.ourClients .clients_container .clientsLogo img {
+  opacity: 0.3;
+  margin: 30px 40px;
+  width: 84px;
+  -o-object-fit: contain;
+  object-fit: contain;
+  background-size: contain;
+  height: 97px;
+  transition: 0.3s;
+}
+
+.ourClients .clients_container .clientsLogo img:hover {
+  opacity: 1;
+}
+
+.reviews {
+  width: 100%;
+  height: 760px;
+  margin: 0;
+  background: url("/img/home/fourthBackground.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.reviews .reviews_container {
+  width: 1200px;
+  height: 100%;
+}
+
+.reviews .reviews_container img {
+  margin-right: 50px;
+  width: 33rem;
+  height: 32rem;
+}
+
+.reviews .reviews_container .textReviews {
+  padding: 30px 26px;
+  width: 40%;
+  text-align: left;
+}
+
+.customers .customers_block h1,
+.reviews .reviews_container .textReviews h1,
+form .form_container h1 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 3rem;
+}
+
+.reviews .reviews_container .textReviews .cardReviews p,
+.reviews .reviews_container .textReviews p {
+  margin: 20px auto 0 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.125rem;
+  word-wrap: break-word;
+  color: #111;
+  line-height: 1.6;
+}
+
+.reviews .reviews_container .textReviews .cardReviews {
+  margin: 25px 0;
+  border-radius: 25px;
+  text-align: left;
+  flex: 1;
+  padding: 30px;
+  width: 450px;
+  height: 250px;
+  background-color: #f2f2f2;
+}
+
+.reviews .reviews_container .textReviews .cardReviews .logo {
+  border-radius: 50%;
+  width: 82px;
+  height: 82px;
+  background: url("/img/home/logoMan.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.reviews .reviews_container .textReviews .cardReviews p {
+  margin: 20px 4px 35px 0;
+}
+
+.reviews .reviews_container .textReviews .cardReviews cite {
+  margin-top: 10px 0 0 4px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.customers {
+  width: 100%;
+  height: 754px;
+  text-align: center;
+  background: linear-gradient(#fff, #ededfe);
+}
+
+.customers .customers_block,
+form .form_container {
+  width: 1200px;
+  flex-direction: column;
+}
+
+.customers .customers_block h1 {
+  margin: 20px auto 0;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #111;
+}
+
+.customers .customers_block .card_block {
+  flex-direction: row;
+  flex-shrink: 3;
+  width: 100%;
+}
+
+.customers .customers_block .card_block .card {
+  width: 37%;
+  height: 355px;
+  text-align: center;
+  flex-direction: column;
+  color: #000;
+  border-radius: 50px;
+  background-color: #fff;
+  margin: 50px 20px;
+  padding: 0 25px;
+}
+
+.customers .customers_block .card_block .card span {
+  position: relative;
+  background-color: #fe7062;
+  border-radius: 50%;
+  width: 105px;
+  height: 105px;
+  padding: 10px;
+}
+
+.customers .customers_block .card_block .card span img {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+.customers .customers_block .card_block p {
+  margin-top: 0;
+  font-size: 1.125rem;
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 1px;
+}
+
+form {
+  margin-top: 0;
+  height: 250px;
+  background-color: #4c4ff9;
+}
+
+form .form_container h1 {
+  margin-top: 0;
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+form .form_container .frmBtn {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+form .form_container .frmBtn input {
+  margin-right: 20px;
+  width: 420px;
+  height: 50px;
+  border-radius: 20px;
+  border: 0;
+  font-size: 1.5rem;
+}
+
+footer {
+  background-color: #333;
+  height: 150px;
+}
+
+footer .footer_container {
+  width: 1200px;
+  height: 100%;
+  flex-wrap: wrap;
+}
+
+footer .footer_container a {
+  color: #fff;
+  margin: 40px;
+  font-size: 2rem;
+  text-align: center;
+}
